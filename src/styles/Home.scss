@@ -36,6 +36,7 @@
             .tag {
                 @include tag-after-before;
                 font-size: 1.5rem;
+                opacity: 0.2;
 
 
             }
@@ -44,14 +45,14 @@
                 // @include tag-after-before;
                 content: "<body>";
                 left: 10%;
-                opacity: 0.5;
+
             }
 
             .down-tag::before {
                 // @include tag-after-before;
                 content: "<body>";
                 left: 10%;
-                opacity: 0.5;
+
             }
         }
     }
@@ -100,7 +101,7 @@
             left: 5%;
             font-family: $tag-font;
             font-weight: 200;
-            opacity: 0.5;
+            opacity: 0.2;
             color: $header-color;
 
         }
@@ -130,7 +131,7 @@
         &::after {
             @include tag-after-before;
             left: 10%;
-            opacity: 0.5;
+            opacity: 0.2;
 
         }
 

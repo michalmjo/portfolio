@@ -74,7 +74,24 @@ const Skills = () => {
             profile for more details or just contact me.
           </p>
         </div>
-        <div className="skill__wrapper-skill">{skillsItem}</div>
+        <div className="skill__wrapper-skill">
+          {skillsItem}
+          <div className="skill__wrapper-xl">
+            <div>
+              <p>
+                Also check my{" "}
+                <span className="btn_git">
+                  <a
+                    href="https://github.com/michalmjo?tab=repositories"
+                    target={`_blank`}
+                  >
+                    Github
+                  </a>{" "}
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
