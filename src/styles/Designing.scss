@@ -1,0 +1,371 @@
+@import '../scss/Variables';
+
+.static {
+    display: none;
+}
+
+.wrapper__designing {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+
+
+
+    .project {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        animation: showContact .7s .3s ease both;
+
+        // justify-content: flex-end;
+        // align-items: center;
+        padding: 15px 0;
+        border-top: 1px solid rgba($color: #dcdcdc, $alpha: .4);
+        background-color: rgba($color: white, $alpha: .01);
+
+        &:nth-last-child(1) {
+            border-bottom: 1px solid rgba($color: #dcdcdc, $alpha: .4);
+        }
+
+        &:hover {
+            background-color: rgba($color: white, $alpha: .1);
+        }
+
+        &-title {
+            position: relative;
+            display: flex;
+            opacity: 0.7;
+            transition: 0.4s ease;
+
+
+            span {
+                flex-basis: 10%;
+                // background-color: cadetblue;
+                font-size: 1.2rem;
+                display: inline-block;
+                align-self: flex-end;
+                margin: 0 5px;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                color: rgba($color: $main-color, $alpha: 1);
+                text-decoration: none;
+                cursor: none;
+
+                p {
+                    // background-color: crimson;
+                    font-size: 3rem;
+                    text-align: left;
+                    margin-left: 5%;
+                    font-weight: bold;
+                }
+            }
+
+
+        }
+
+        &-title::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -15px;
+            height: 1px;
+            background-color: $green-color;
+            width: 0%;
+            transition: 1s ease-out;
+        }
+
+        &-title:hover {
+            opacity: 1;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+
+
+    }
+
+
+    .other_project {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        animation: showContact .7s .3s ease both;
+    }
+
+    .miniProject {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+
+
+
+        &-div {
+            flex-basis: 100%;
+            flex-grow: 1;
+            margin: 10px 0;
+            overflow: hidden;
+            border: 0px solid $main-bg-color;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: all 1s ease;
+
+            &.active {
+                transform: translateY(0px);
+                opacity: 1;
+
+            }
+
+            &:hover {
+                border: 10px solid $main-bg-color;
+            }
+
+
+
+            img {
+                width: 100%;
+                transition: 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-bottom: 20%;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 10px;
+        background-color: rgba($color: $main-color, $alpha: .1);
+
+        a {
+            text-decoration: none;
+            color: wheat;
+            display: inline-block;
+            width: 100%;
+            cursor: none;
+        }
+
+        p {
+            opacity: .5;
+            transition: 0.4s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1023px) {
+
+    .static {
+        position: fixed;
+        width: 15%;
+        display: block;
+        height: 70%;
+        // background-color: #dcdcdc;
+        top: 15%;
+        animation: show 0.4s ease;
+
+        .staticGuy,
+        .workSpace {
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            top: 0%;
+        }
+
+        .staticGuy {
+            animation: flyGuy 10s infinite ease-in both;
+
+            @keyframes flyGuy {
+                0% {}
+
+                25% {
+                    top: -2%;
+                }
+
+                50% {
+                    top: 0%;
+                }
+
+                75% {
+                    top: 2%;
+                }
+
+                100% {
+                    top: 0%;
+                }
+            }
+        }
+
+        .workSpace {
+            top: 12%;
+            left: -20px;
+            width: 70%;
+            animation: flyWorkSpace 12s infinite ease both;
+
+            @keyframes flyWorkSpace {
+                0% {}
+
+                25% {
+                    top: 14%;
+                }
+
+                50% {
+                    top: 12%;
+                }
+
+                75% {
+                    top: 10%;
+                }
+
+                100% {
+                    top: 12%;
+                }
+            }
+
+        }
+    }
+
+    .wrapper__designing {
+        width: 60%;
+        right: 5%;
+
+        .project-pic {
+            display: none;
+            position: absolute;
+            opacity: 0.2;
+            left: -60%;
+            margin: 0 20px;
+            top: 2%;
+            background-color: transparent;
+
+            &.activePhoto {
+                display: block;
+
+                animation: showPicture 0.4s 1 0.1s ease both;
+            }
+
+            @keyframes showPicture {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50px);
+                }
+
+                to {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+
+
+            img.projectImg {
+                z-index: -1;
+                width: 60%;
+                border: 15px solid rgba(255, 250, 250, 0.057);
+
+            }
+        }
+
+        .project {
+
+
+            &-title {
+
+                a {
+
+                    p {
+                        font-size: 4rem;
+                    }
+                }
+
+
+            }
+
+
+
+        }
+
+
+        .other_project {
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+            animation: showContact .7s .3s ease both;
+        }
+
+        .miniProject {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+
+
+            &-div {
+                flex-basis: 100%;
+                flex-grow: 1;
+                margin: 10px 0;
+                overflow: hidden;
+                border: 0px solid $main-bg-color;
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: all 1s ease;
+
+                &.active {
+                    transform: translateY(0px);
+                    opacity: 1;
+
+                }
+
+                &:hover {
+                    border: 10px solid $main-bg-color;
+                }
+
+
+
+                img {
+                    width: 100%;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-bottom: 20%;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 10px;
+            background-color: rgba($color: $main-color, $alpha: .1);
+
+            a {
+                text-decoration: none;
+                color: wheat;
+                display: inline-block;
+                width: 100%;
+                cursor: none;
+            }
+
+            p {
+                opacity: .5;
+                transition: 0.4s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

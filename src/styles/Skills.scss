@@ -1,0 +1,94 @@
+@import '../scss/Variables';
+
+.skill__wrapper {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // background-color: orange;
+    margin: 0 10px;
+
+
+    &-text {
+        margin-top: 100px;
+        animation: show 0.6s ease;
+
+        h2 {
+            color: $header-color;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            margin: 15px 0px;
+            font-size: 1.5rem;
+
+            .linkedIn {
+                text-decoration: none;
+                color: rgba(132, 255, 0, 0.5);
+                font-weight: bold;
+                cursor: none;
+                transition: 0.4s;
+
+                &:hover {
+                    color: rgb(220, 160, 20)
+                }
+            }
+        }
+    }
+
+    &-skill {
+        margin-top: 50px;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        div {
+            width: 100%;
+            border-bottom: 2px solid rgb(45, 66, 99);
+            padding: 10px 0;
+
+            animation: show 0.6s ease both;
+            animation-delay: 0.6s;
+
+            &:nth-child(2) {
+                border-color: rgb(200, 75, 49);
+                animation-delay: 0.8s;
+            }
+
+            &:nth-child(3) {
+                border-color: rgb(239, 223, 0);
+                animation-delay: 1s;
+            }
+
+            &:nth-child(4) {
+                border-color: wheat;
+                animation-delay: 1.2s;
+            }
+        }
+
+    }
+}
+
+// media
+
+
+@media screen and (min-width: 600px) {
+    .skill__wrapper {
+        &-text {
+            margin-top: 20%;
+
+            h2 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 2.6rem;
+            }
+        }
+
+        &-skill {
+            font-size: 2.8rem;
+        }
+    }
+
+}

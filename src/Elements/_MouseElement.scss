@@ -1,0 +1,123 @@
+div.cursor {
+    // position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #ECDBBA;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    pointer-events: none;
+    // transition: all 1s ease;
+
+
+
+    // menu
+    &.show_hi::before {
+        content: "don't be shy";
+        position: absolute;
+        font-weight: bold;
+        display: block;
+        top: 0px;
+        left: -105px;
+        font-size: 1.4rem;
+        animation: fadeIn 0.4s ease-out;
+    }
+
+    &.show_skill::before {
+        content: "see my skills";
+        position: absolute;
+        font-weight: bold;
+        display: block;
+        top: 0px;
+        width: 100px;
+        left: 50px;
+        font-size: 1.4rem;
+        animation: fadeIn 0.4s ease-out;
+    }
+
+    &.show_design::before {
+        content: "see my design";
+        position: absolute;
+        font-weight: bold;
+        display: block;
+        top: 0px;
+        left: -125px;
+        font-size: 1.4rem;
+        animation: fadeIn 0.4s ease-out;
+    }
+
+
+    //   skills
+    &.show_html::before,
+    &.show_css::before,
+    &.show_js::before,
+    &.show_react::before {
+        position: absolute;
+        display: block;
+        font-weight: bold;
+        top: 0px;
+        width: 100px;
+        left: 50px;
+        font-size: 1.4rem;
+        animation: fadeIn 0.4s ease-out;
+    }
+
+
+    &.show_html::before {
+        content: "Html 5";
+
+    }
+
+    &.show_css::before {
+        content: "Creating beutifull things";
+        width: 200px;
+    }
+
+    &.show_js::before {
+        content: "Vanilla js, OOP";
+
+    }
+
+    &.show_react::before {
+        content: "Router, Redux";
+
+    }
+
+
+
+    @keyframes fadeIn {
+        0% {
+            top: -10px;
+            opacity: 0;
+        }
+
+        100% {
+            top: 0px;
+            opacity: 1;
+        }
+
+    }
+}
+
+/* div.cursor.add {
+    display: none;
+  } */
+
+.follow {
+    position: absolute;
+    border: solid 3px #ECDBBA;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 3;
+
+
+
+}
