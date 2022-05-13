@@ -171,7 +171,7 @@
         .workSpace {
             position: absolute;
             width: 100%;
-            left: 50%;
+            right: -120%;
             top: 0%;
 
         }
@@ -206,9 +206,17 @@
             max-width: 138px;
             max-height: 136px;
             top: 12%;
-            left: -20px;
+            right: -30%;
             width: 70%;
             animation: flyWorkSpace 12s infinite ease both;
+
+            @media (min-width: 1600px) {
+                right: -40%;
+            }
+
+            @media (min-width: 1900px) {
+                right: -50%;
+            }
 
             @keyframes flyWorkSpace {
                 0% {}

@@ -10,43 +10,11 @@ import weatherApp from "../images/weatherApp.jpg";
 import oneHandBandit from "../images/oneHandBandit.jpg";
 import crypto from "../images/crypto.jpg";
 import { show, reveal } from "../js/main";
-import {
-  mini1,
-  mini2,
-  mini3,
-  mini4,
-  mini5,
-  mini6,
-  mini7,
-  mini8,
-  mini9,
-  mini10,
-  mini11,
-  mini12,
-  mini13,
-  mini14,
-  mini15,
-  mini16,
-} from "../Elements/images";
+import { images } from "../Elements/images";
 
-const imagesTable = [
-  mini1,
-  mini2,
-  mini3,
-  mini4,
-  mini5,
-  mini6,
-  mini7,
-  mini8,
-  mini9,
-  mini10,
-  mini11,
-  mini12,
-  mini13,
-  mini14,
-  mini15,
-  mini16,
-];
+const imagesTable = Object.values(images);
+// console.log(imagesTable);
+
 const project = [
   {
     id: 1,
