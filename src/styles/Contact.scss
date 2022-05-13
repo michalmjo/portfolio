@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        top: 50%;
+        top: 45%;
         text-align: center;
 
         @media (min-width:770px) {
@@ -26,7 +26,6 @@
         .email,
         .socials {
             font-size: 1.4rem;
-            margin: 10px 0;
             animation: showContact .7s .3s ease both;
 
             p.email-small {

@@ -13,7 +13,7 @@
     .change {
         transition: all 0.7s ease;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -75%);
         animation: fly 5s ease-in infinite both;
@@ -57,7 +57,7 @@
     }
 
     & .center img {
-        height: 35vh;
+        height: 30vh;
     }
 
     &.center img:nth-child(1) {

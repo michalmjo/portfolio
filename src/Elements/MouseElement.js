@@ -1,19 +1,23 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import useWindowDimensions from "./getWindowDimensions";
 import "./_MouseElement.scss";
 
 const MouseElement = () => {
+  const { width } = useWindowDimensions();
   const location = useLocation();
   console.log(location.pathname);
+  const page = location.pathname;
   if (
-    location.pathname === "/contact" ||
-    location.pathname === "/" ||
-    location.pathname === "/skills" ||
-    location.pathname === "*"
+    page === "/contact" ||
+    page === "/" ||
+    (page === "/skills" && width >= 600) ||
+    page === "*"
   ) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflowY = "auto";
+    document.body.style.overflowX = "hidden";
   }
 
   useEffect(() => {
