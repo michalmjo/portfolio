@@ -16,9 +16,6 @@
         display: flex;
         flex-direction: column;
         animation: showContact .7s .3s ease both;
-
-        // justify-content: flex-end;
-        // align-items: center;
         padding: 15px 0;
         border-top: 1px solid rgba($color: #dcdcdc, $alpha: .4);
         background-color: rgba($color: white, $alpha: .01);
@@ -40,7 +37,7 @@
 
             span {
                 flex-basis: 10%;
-                // background-color: cadetblue;
+
                 font-size: 1.2rem;
                 display: inline-block;
                 align-self: flex-end;
@@ -62,8 +59,6 @@
                     font-weight: bold;
                 }
             }
-
-
         }
 
         &-title::after {
@@ -84,8 +79,6 @@
                 width: 100%;
             }
         }
-
-
 
     }
 
@@ -171,7 +164,6 @@
         width: 15%;
         display: block;
         height: 70%;
-        // background-color: #dcdcdc;
         top: 15%;
         animation: show 0.4s ease;
 
@@ -181,10 +173,13 @@
             width: 100%;
             left: 50%;
             top: 0%;
+
         }
 
         .staticGuy {
             animation: flyGuy 10s infinite ease-in both;
+            max-height: 400px;
+            max-width: 200px;
 
             @keyframes flyGuy {
                 0% {}
@@ -208,6 +203,8 @@
         }
 
         .workSpace {
+            max-width: 138px;
+            max-height: 136px;
             top: 12%;
             left: -20px;
             width: 70%;
@@ -237,7 +234,7 @@
     }
 
     .wrapper__designing {
-        width: 60%;
+        width: 50%;
         right: 5%;
 
         .project-pic {
@@ -276,70 +273,15 @@
             }
         }
 
-        .project {
 
 
-            &-title {
-
-                a {
-
-                    p {
-                        font-size: 4rem;
-                    }
-                }
-
-
-            }
-
-
-
-        }
-
-
-        .other_project {
-            text-align: center;
-            width: 100%;
-            margin: 10px 0;
-            animation: showContact .7s .3s ease both;
-        }
 
         .miniProject {
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-
 
 
             &-div {
-                flex-basis: 100%;
-                flex-grow: 1;
-                margin: 10px 0;
-                overflow: hidden;
-                border: 0px solid $main-bg-color;
-                opacity: 0;
-                transform: translateY(-50px);
-                transition: all 1s ease;
-
-                &.active {
-                    transform: translateY(0px);
-                    opacity: 1;
-
-                }
-
-                &:hover {
-                    border: 10px solid $main-bg-color;
-                }
-
-
-
-                img {
-                    width: 100%;
-                    transition: 0.4s ease;
-
-                    &:hover {
-                        transform: scale(1.2);
-                    }
-                }
+                flex-basis: 50%;
+                padding: 10px;
             }
         }
 

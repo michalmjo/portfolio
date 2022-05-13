@@ -180,7 +180,7 @@ const Designing = () => {
             />
           ) : null}
         </div>
-        {/* to jest zmienione dodane jest project-pic ze zdjeciem */}
+
         {projectList}
         <div className="other_project">
           See my other{" "}
