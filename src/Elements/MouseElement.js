@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import useWindowDimensions from "./getWindowDimensions";
-import "./_MouseElement.scss";
+import "../styles/_MouseElement.scss";
 
 const MouseElement = () => {
   const { width } = useWindowDimensions();

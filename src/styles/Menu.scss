@@ -1,5 +1,4 @@
-@import '../scss/Variables';
-
+@import './Variables';
 
 
 .main__nav {
@@ -23,16 +22,9 @@
 
     &--item {
         position: fixed;
-        // flex-basis: 50%;
         width: 50%;
-        // flex-grow: 1;
         display: flex;
         padding: 5% 0;
-        // margin: 10px 0;
-        // align-content: space-around;
-        // align-self: flex-end;
-        // background-color: red;
-        // margin: 5% 0;
         font-size: 1.6rem;
         align-self: flex-start;
         background-color: $main-bg-color;

@@ -1,4 +1,45 @@
-@import '../scss/Variables';
+@import './Variables';
+
+
+.scroll_down {
+    display: none;
+    position: fixed;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    bottom: 10%;
+    width: 150px;
+    height: 50px;
+    left: 2%;
+    transform: rotate(90deg);
+    animation: scrollDown 1s ease infinite alternate-reverse;
+
+
+    @keyframes scrollDown {
+        to {
+            bottom: 12%;
+        }
+    }
+
+    .arrow {
+        position: relative;
+        bottom: 5%;
+        width: 7px;
+        height: 7px;
+        left: 3%;
+        align-items: center;
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        border-left: transparent;
+        border-top: transparent;
+        transform: rotate(315deg);
+    }
+
+    @media (min-width: 1023px) {
+        display: flex;
+    }
+
+
+}
 
 .static {
     display: none;
@@ -8,8 +49,6 @@
     position: absolute;
     top: 10%;
     width: 100%;
-
-
 
     .project {
         width: 100%;
@@ -95,8 +134,6 @@
         width: 100%;
         flex-wrap: wrap;
 
-
-
         &-div {
             flex-basis: 100%;
             flex-grow: 1;
@@ -116,7 +153,6 @@
             &:hover {
                 border: 10px solid $main-bg-color;
             }
-
 
 
             img {

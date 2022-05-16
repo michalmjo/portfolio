@@ -13,7 +13,6 @@ import { show, reveal } from "../js/main";
 import { images } from "../Elements/images";
 
 const imagesTable = Object.values(images);
-// console.log(imagesTable);
 
 const project = [
   {
@@ -55,8 +54,6 @@ const Designing = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleChangePhoto = (e) => {
-    // console.log(e.currentTarget.getAttribute("tag"));
-
     if (width >= 1023) {
       setIsActive(true);
     } else {
@@ -65,7 +62,6 @@ const Designing = () => {
     const target = e.currentTarget.getAttribute("tag");
 
     if (target === "memory") {
-      console.log("zmienon na memeory");
       setPic(memory);
     } else if (target === "toDo") {
       setPic(toDoList);
@@ -135,6 +131,11 @@ const Designing = () => {
 
   return (
     <>
+      <div className="scroll_down">
+        scroll down<span className="arrow"></span>
+        <span className="arrow"></span>
+        <span className="arrow"></span>
+      </div>
       {isActive ? null : work}
       <div className="wrapper__designing">
         <div className={`project-pic ${isActive ? `activePhoto` : null}`}>
