@@ -5,7 +5,6 @@ const Header = () => {
 
   const allLetters = text.split("");
 
-  console.log(allLetters);
   const letters = allLetters.map((element, id) => {
     if (element === "=") {
       return <br key={id}></br>;
@@ -25,7 +24,6 @@ const Header = () => {
   });
 
   function handleBouncing(e) {
-    console.log(e.currentTarget);
     e.currentTarget.classList.add("bounce");
   }
 

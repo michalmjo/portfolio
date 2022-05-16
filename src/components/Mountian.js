@@ -6,7 +6,6 @@ import mountian1 from "../images/mountian1.png";
 import mountian2 from "../images/mountian2.png";
 
 const Mountian = ({ direction }) => {
-  console.log(direction);
   const isActive = direction ? direction : "reset";
   return (
     <>

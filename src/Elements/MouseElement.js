@@ -24,7 +24,6 @@ const MouseElement = () => {
   }
 
   useEffect(() => {
-    console.log(cursorRef.current);
     let xp = 0;
     let yp = 0;
 
