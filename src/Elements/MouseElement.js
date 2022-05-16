@@ -1,12 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import useWindowDimensions from "./getWindowDimensions";
 import "../styles/_MouseElement.scss";
 
 const MouseElement = () => {
+  const cursorRef = useRef();
+  const followCursorRef = useRef();
+
   const { width } = useWindowDimensions();
   const location = useLocation();
-  console.log(location.pathname);
+
   const page = location.pathname;
   if (
     page === "/contact" ||
@@ -21,10 +24,12 @@ const MouseElement = () => {
   }
 
   useEffect(() => {
+    console.log(cursorRef.current);
     let xp = 0;
     let yp = 0;
-    const cursor = document.querySelector(".cursor");
-    const follow = document.querySelector(".follow");
+
+    const cursor = cursorRef.current;
+    const followCursor = followCursorRef.current;
 
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -32,7 +37,7 @@ const MouseElement = () => {
       )
     ) {
       cursor.style.display = "none";
-      follow.style.display = "none";
+      followCursor.style.display = "none";
     } else {
       document.addEventListener("mousemove", mouseEffect);
     }
@@ -47,15 +52,15 @@ const MouseElement = () => {
         xp = positionX;
         yp = positionY;
 
-        follow.setAttribute("style", `top: ${yp}px; left: ${xp}px;`);
+        followCursor.setAttribute("style", `top: ${yp}px; left: ${xp}px;`);
       }, 100);
     }
   }, []);
 
   return (
     <>
-      <div className="cursor"></div>
-      <div className="follow"></div>
+      <div ref={cursorRef} className="cursor"></div>
+      <div ref={followCursorRef} className="follow"></div>
     </>
   );
 };

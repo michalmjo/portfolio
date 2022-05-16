@@ -9,8 +9,6 @@ const list = [
 ];
 
 const Menu = () => {
-  // const navigate = useNavigate();
-  // const btn = document.querySelector(".btn_hidden");
   const handleShowText = (e) => {
     const data = e.currentTarget.getAttribute("data");
 
@@ -34,43 +32,10 @@ const Menu = () => {
     cursor.classList.remove("show_design");
   };
 
-  // const handleNavigation = (e, element = "") => {
-  //   // debugger;
-
-  //   console.log(element);
-  //   if (element) {
-  //     console.log("JESTES W SRODKu");
-  //     const name = element.getAttribute("name");
-  //     element.innerHTML = name;
-
-  //     return;
-  //   } else {
-  //     const click = e.currentTarget;
-
-  //     if (click.innerHTML === "") {
-  //       const name = e.currentTarget.getAttribute("name");
-  //       click.innerHTML = name;
-  //     } else {
-  //       click.innerHTML = "";
-  //       btn.style.display = "block";
-  //     }
-  //   }
-  // };
-
-  // const handleBtnClick = (e) => {
-  //   const text = e.target.parentNode.querySelector("a").getAttribute("name");
-
-  //   const element = e.target.parentNode.querySelector("a");
-  //   btn.style.display = "none";
-  //   handleNavigation(text, element);
-  //   return navigate("/");
-  // };
-
   const ulList = list.map((item) => {
     return (
       <li className="main__nav--item" key={item.name}>
         <NavLink
-          // onClick={handleNavigation}
           onMouseEnter={handleShowText}
           onMouseLeave={handleLeaveText}
           data={item.path}
@@ -79,9 +44,6 @@ const Menu = () => {
         >
           {item.name}
         </NavLink>
-        {/* <button className="btn_hidden" onClick={handleBtnClick}>
-          X
-        </button> */}
       </li>
     );
   });
