@@ -1,5 +1,4 @@
 div.cursor {
-    // position: relative;
     width: 15px;
     height: 15px;
     background-color: #ECDBBA;
@@ -10,11 +9,8 @@ div.cursor {
     transform: translate(-50%, -50%);
     z-index: 3;
     pointer-events: none;
-    // transition: all 1s ease;
 
 
-
-    // menu
     &.show_hi::before {
         content: "don't be shy";
         position: absolute;
@@ -117,7 +113,5 @@ div.cursor {
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 3;
-
-
 
 }

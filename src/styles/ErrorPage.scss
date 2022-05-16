@@ -3,41 +3,6 @@ $n-height: $n-width * 5; */
 @import './Variables';
 
 
-
-
-/* .four {
-    position: relative;
-    width: $n-width;
-    height: $n-height;
-    border: 1px solid $black;
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        border: 1px solid $black;
-    }
-
-    &::before {
-        top: 50%;
-        right: -1rem;
-        width: $n-width * 4;
-        height: $n-width;
-    }
-
-    &::after {
-        top: 0;
-        left: -$n-width * 2;
-        width: $n-width;
-        height: $n-height - $n-width;
-    }
-} */
-
-
-
-
-
-
 .contener {
     position: absolute;
     display: flex;
@@ -46,10 +11,10 @@ $n-height: $n-width * 5; */
     align-items: center;
     top: 0%;
     z-index: 2;
-    left: -7%;
+    left: -10%;
     width: 107vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: $main-bg-color;
 
 
     .error {
@@ -101,14 +66,6 @@ $n-height: $n-width * 5; */
 
 }
 
-
-
-// .error p {
-//     font-size: 18px;
-// }
-
-
-
 .animation {
     position: relative;
     width: 70%;
@@ -135,9 +92,6 @@ hr {
 
 @keyframes walk {
 
-    /* 0% {
-     background-position: 0 0;
-    } */
     100% {
         background-position: -1024px 0;
     }

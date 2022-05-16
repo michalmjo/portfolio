@@ -3,21 +3,12 @@
 
 .main__nav {
     position: absolute;
-    // background-color: orange;
     display: flex;
-    // flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
     min-width: 90vw;
-    // z-index: 1;
 
 
-
-    // align-items: flex-start;
-
-
-
-    // align-content: flex-end;
 
 
     &--item {
@@ -36,7 +27,6 @@
         &:nth-child(2) {
             justify-content: flex-end;
             align-self: flex-start;
-            // background-color: orange;
             right: 5%;
 
             a {

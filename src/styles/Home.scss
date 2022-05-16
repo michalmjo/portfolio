@@ -39,14 +39,12 @@
             }
 
             .up-tag::after {
-                // @include tag-after-before;
                 content: "<body>";
                 left: 10%;
 
             }
 
             .down-tag::before {
-                // @include tag-after-before;
                 content: "<body>";
                 left: 10%;
 
@@ -202,14 +200,10 @@
             }
 
 
-
             span.main-title {
-
                 display: inline-block;
                 font-family: $header-font;
                 font-size: 4.5rem;
-
-
             }
 
         }
