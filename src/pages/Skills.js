@@ -53,13 +53,13 @@ const Skills = () => {
         <div className="skill__wrapper-text">
           <h2>Skills & Experience</h2>
           <p>
-            Since I remember I am a self-taught teacher, I learn by trial and
-            error.
+            Since I've remembered I am a self-taught, I have been learning by
+            trial and error
           </p>
           <p>
             I create successful responsive websites that are fast, easy to use,
             and built with best practices. The main area of my expertise is
-            front-end development, HTML, CSS, JS, building small and medium web
+            frontend development, HTML, CSS, JS, building small and medium web
             apps{" "}
           </p>
           <p>
