@@ -72,11 +72,9 @@ const Designing = () => {
     } else if (target === "crypto") {
       setPic(crypto);
     }
-    console.log("Zmiana zdjecia");
   };
 
-  const handleOutMouse = (e) => {
-    console.log(e.currentTarget);
+  const handleOutMouse = () => {
     setPic(null);
     setIsActive(false);
   };
@@ -143,7 +141,7 @@ const Designing = () => {
             <img
               className="projectImg"
               src={pic}
-              alt="memoryGame"
+              alt="projectPicture"
               aria-hidden="true"
               loading="lazy"
             />
