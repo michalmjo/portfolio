@@ -15,7 +15,7 @@
         position: fixed;
         width: 50%;
         display: flex;
-        padding: 5% 0;
+        padding: 4% 0;
         font-size: 1.6rem;
         align-self: flex-start;
         background-color: $main-bg-color;
@@ -53,6 +53,7 @@
             text-decoration: none;
             cursor: none;
             font-weight: bold;
+            padding: 10px;
 
 
         }

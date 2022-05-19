@@ -52,7 +52,6 @@
         display: flex;
         flex-direction: column;
         animation: showContact .7s .3s ease both;
-        padding: 15px 0;
         border-top: 1px solid rgba($color: #dcdcdc, $alpha: .4);
         background-color: rgba($color: white, $alpha: .01);
 
@@ -83,6 +82,7 @@
             a {
                 display: block;
                 width: 100%;
+                margin: 15px 0;
                 color: rgba($color: $main-color, $alpha: 1);
                 text-decoration: none;
                 cursor: none;
@@ -100,7 +100,7 @@
             content: "";
             display: block;
             position: absolute;
-            bottom: -15px;
+            bottom: 0px;
             height: 1px;
             background-color: $green-color;
             width: 0%;
