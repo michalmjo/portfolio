@@ -110,12 +110,17 @@ const Designing = () => {
   const mini = imagesTable.map((element, index) => {
     return (
       <div key={index} className="miniProject-div">
-        <img
-          src={element}
-          alt={`Pic${index}`}
-          aria-hidden="true"
-          loading="lazy"
-        />
+        <a
+          href="https://www.youtube.com/channel/UCh_n6LL8LUgCuhMD3hC3RSQ"
+          style={{ cursor: "none" }}
+        >
+          <img
+            src={element}
+            alt={`Pic${index}`}
+            aria-hidden="true"
+            loading="lazy"
+          />
+        </a>
       </div>
     );
   });
