@@ -111,6 +111,8 @@ const Designing = () => {
     return (
       <div key={index} className="miniProject-div">
         <a
+          target={"_blank"}
+          rel="noreferrer"
           href="https://www.youtube.com/channel/UCh_n6LL8LUgCuhMD3hC3RSQ"
           style={{ cursor: "none" }}
         >
