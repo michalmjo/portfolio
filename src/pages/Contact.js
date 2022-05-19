@@ -1,6 +1,6 @@
 import "../styles/Contact.scss";
 
-const contactInfo = [
+const socialContactInfo = [
   {
     name: "linkedIn",
     class: "socials-linked",
@@ -19,7 +19,7 @@ const contactInfo = [
 ];
 
 const Contact = () => {
-  const socialLinks = contactInfo.map((social) => {
+  const socialLinks = socialContactInfo.map((social) => {
     return (
       <li key={social.name}>
         <a className={social.class} target={`_blank`} href={social.link}>

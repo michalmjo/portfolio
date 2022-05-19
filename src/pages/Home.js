@@ -1,14 +1,22 @@
 import "../styles/Home.scss";
 
 const Header = () => {
-  const text = `Hi,= I'm-Michał,= a-guy-who-loves-designing.`;
+  const headerText = `Hi,= I'm-Michał,= a-guy-who-loves-designing.`;
 
-  const allLetters = text.split("");
+  const allLetters = headerText.split("");
 
-  const letters = allLetters.map((element, id) => {
-    if (element === "=") {
+  const handleBouncing = (e) => {
+    e.currentTarget.classList.add("bounce");
+  };
+
+  const handleDeleteBouncing = (e) => {
+    e.currentTarget.classList.remove("bounce");
+  };
+
+  const letters = allLetters.map((letter, id) => {
+    if (letter === "=") {
       return <br key={id}></br>;
-    } else if (element === "-") {
+    } else if (letter === "-") {
       return ` `;
     }
     return (
@@ -18,18 +26,11 @@ const Header = () => {
         onMouseEnter={handleBouncing}
         onMouseLeave={handleDeleteBouncing}
       >
-        {element}
+        {letter}
       </span>
     );
   });
 
-  function handleBouncing(e) {
-    e.currentTarget.classList.add("bounce");
-  }
-
-  function handleDeleteBouncing(e) {
-    e.currentTarget.classList.remove("bounce");
-  }
   return (
     <>
       <div className="header__cointainer">
