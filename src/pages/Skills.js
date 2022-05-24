@@ -1,10 +1,10 @@
 import "../styles/Skills.scss";
 
 const skillsTab = [
-  { id: 1, name: "html", class: "show_html" },
-  { id: 2, name: "css", class: "show_css" },
-  { id: 3, name: "js", class: "show_js" },
-  { id: 4, name: "react", class: "show_react" },
+  { id: 1, name: "HTML", class: "show_html" },
+  { id: 2, name: "CSS (SASS)", class: "show_css" },
+  { id: 3, name: "JavaScript", class: "show_js" },
+  { id: 4, name: "React, Redux,  Router", class: "show_react" },
 ];
 
 const Skills = () => {
@@ -13,16 +13,13 @@ const Skills = () => {
 
     const cursor = document.querySelector(".cursor");
 
-    if (data === "html") {
+    if (data === "HTML") {
       cursor.classList.add("show_html");
-    } else if (data === "css") {
-      console.log("text skills");
+    } else if (data === "CSS") {
       cursor.classList.add("show_css");
-    } else if (data === "js") {
-      console.log("js");
+    } else if (data === "JavaScript") {
       cursor.classList.add("show_js");
     } else if (data === "react") {
-      console.log("reactt");
       cursor.classList.add("show_react");
     }
   };
@@ -35,15 +32,15 @@ const Skills = () => {
     cursor.classList.remove("show_react");
   };
 
-  const skillsItem = skillsTab.map((item) => (
+  const skillsItem = skillsTab.map((skill) => (
     <div
-      key={item.id}
-      className={item.class}
-      data={item.name}
+      key={skill.id}
+      className={skill.class}
+      data={skill.name}
       onMouseEnter={handleShowText}
       onMouseLeave={handleLeaveText}
     >
-      <p>{item.name}</p>
+      <p>{skill.name}</p>
     </div>
   ));
 

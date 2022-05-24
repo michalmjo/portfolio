@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import "../styles/Designing.scss";
 import useWindowDimensions from "../Elements/getWindowDimensions";
 
+import ScrollDown from "../Elements/ScrollDown";
+import OtherProject from "../Elements/OtherProject";
+
 import workGuy from "../images/workGuy.png";
 import workSpace from "../images/workSpace.png";
 import memory from "../images/logoGame.png";
@@ -10,9 +13,6 @@ import weatherApp from "../images/weatherApp.jpg";
 import oneHandBandit from "../images/oneHandBandit.jpg";
 import crypto from "../images/crypto.jpg";
 import { show, reveal } from "../js/main";
-import { images } from "../Elements/images";
-
-const imagesTable = Object.values(images);
 
 const project = [
   {
@@ -59,17 +59,17 @@ const Designing = () => {
     } else {
       setIsActive(false);
     }
-    const target = e.currentTarget.getAttribute("tag");
+    const targetCurrentWorkList = e.currentTarget.getAttribute("tag");
 
-    if (target === "memory") {
+    if (targetCurrentWorkList === "memory") {
       setPic(memory);
-    } else if (target === "toDo") {
+    } else if (targetCurrentWorkList === "toDo") {
       setPic(toDoList);
-    } else if (target === "weather") {
+    } else if (targetCurrentWorkList === "weather") {
       setPic(weatherApp);
-    } else if (target === "bandit") {
+    } else if (targetCurrentWorkList === "bandit") {
       setPic(oneHandBandit);
-    } else if (target === "crypto") {
+    } else if (targetCurrentWorkList === "crypto") {
       setPic(crypto);
     }
   };
@@ -107,40 +107,16 @@ const Designing = () => {
     );
   });
 
-  const mini = imagesTable.map((element, index) => {
-    return (
-      <div key={index} className="miniProject-div">
-        <a
-          target={"_blank"}
-          rel="noreferrer"
-          href="https://www.youtube.com/channel/UCh_n6LL8LUgCuhMD3hC3RSQ"
-          style={{ cursor: "none" }}
-        >
-          <img
-            src={element}
-            alt={`Pic${index}`}
-            aria-hidden="true"
-            loading="lazy"
-          />
-        </a>
-      </div>
-    );
-  });
-
   const work = (
     <div className="static">
       <img className="staticGuy" src={workGuy} alt="workGuy" />
-      <img className="workSpace" src={workSpace} alt="workGuy" />
+      <img className="workSpace" src={workSpace} alt="workSpace" />
     </div>
   );
 
   return (
     <>
-      <div className="scroll_down">
-        scroll down<span className="arrow"></span>
-        <span className="arrow"></span>
-        <span className="arrow"></span>
-      </div>
+      <ScrollDown />
       {isActive ? null : work}
       <div className="wrapper__designing">
         <div className={`project-pic ${isActive ? `activePhoto` : null}`}>
@@ -156,22 +132,7 @@ const Designing = () => {
         </div>
 
         {projectList}
-        <div className="other_project">
-          See my other{" "}
-          <span style={{ color: "crimson", fontWeight: "bold" }}>mini</span>{" "}
-          project
-        </div>
-        <div className="miniProject">{mini}</div>
-        <footer>
-          <p>
-            <a
-              href="https://www.youtube.com/channel/UCh_n6LL8LUgCuhMD3hC3RSQ"
-              target={`_blank`}
-            >
-              See all my mini project
-            </a>
-          </p>
-        </footer>
+        <OtherProject />
       </div>
     </>
   );
