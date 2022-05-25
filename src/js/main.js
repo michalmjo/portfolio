@@ -13,7 +13,6 @@ export function show(type = "") {
   });
 }
 export function reveal() {
-  console.log("test");
   const itemList = document.querySelectorAll(".miniProject-div");
   itemList.forEach((item) => {
     let windowheight = window.innerHeight;
