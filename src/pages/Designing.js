@@ -12,14 +12,15 @@ import toDoList from "../images/ToDoList.jpg";
 import weatherApp from "../images/weatherApp.jpg";
 import oneHandBandit from "../images/oneHandBandit.jpg";
 import crypto from "../images/crypto.jpg";
+import movieApp from "../images/movieApp.jpg";
 import { show, reveal } from "../js/main";
 
 const project = [
   {
     id: 1,
-    tag: "toDo",
-    name: "ToDoList",
-    url: `https://michalmjo.github.io/toDo-app-react/`,
+    tag: "movieApp",
+    name: "Movie App",
+    url: `https://michalmjo.github.io/movie-app/`,
   },
   {
     id: 2,
@@ -44,6 +45,12 @@ const project = [
     tag: "crypto",
     name: "Cryptocurrency",
     url: `https://michalmjo.github.io/cryptocurrency/`,
+  },
+  {
+    id: 6,
+    tag: "toDo",
+    name: "ToDoList",
+    url: `https://michalmjo.github.io/toDo-app-react/`,
   },
 ];
 
@@ -71,6 +78,8 @@ const Designing = () => {
       setPic(oneHandBandit);
     } else if (targetCurrentWorkList === "crypto") {
       setPic(crypto);
+    } else if (targetCurrentWorkList === "movieApp") {
+      setPic(movieApp);
     }
   };
 
