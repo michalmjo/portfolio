@@ -5,8 +5,9 @@ import useWindowDimensions from "../Elements/getWindowDimensions";
 import ScrollDown from "../Elements/ScrollDown";
 import OtherProject from "../Elements/OtherProject";
 
-import workGuy from "../images/workGuy.png";
-import workSpace from "../images/workSpace.png";
+import workGuyy from "../images/workGuy1.png";
+import circle from "../images/circle.png";
+
 import memory from "../images/logoGame.png";
 import toDoList from "../images/ToDoList.jpg";
 import weatherApp from "../images/weatherApp.jpg";
@@ -118,8 +119,8 @@ const Designing = () => {
 
   const work = (
     <div className="static">
-      <img className="staticGuy" src={workGuy} alt="workGuy" />
-      <img className="workSpace" src={workSpace} alt="workSpace" />
+      <img className="staticGuy" src={workGuyy} alt="workGuy" />
+      <img className="workSpace" src={circle} alt="workSpace" />
     </div>
   );
 

@@ -210,8 +210,9 @@
 
         .staticGuy {
             animation: flyGuy 10s infinite ease-in both;
-            max-height: 400px;
-            max-width: 200px;
+            width: 200px;
+            z-index: 1;
+            transform: translate(-50%, 25%);
 
             @keyframes flyGuy {
                 0% {}
@@ -235,20 +236,20 @@
         }
 
         .workSpace {
-            max-width: 138px;
-            max-height: 136px;
-            top: 12%;
-            right: -30%;
-            width: 70%;
-            animation: flyWorkSpace 12s infinite ease both;
+            width: 400px;
+            height: 400px;
+            // top: 12%;
+            // right: -30%;
+            // width: 70%;
+            // animation: flyWorkSpace 12s infinite ease both;
 
-            @media (min-width: 1600px) {
-                right: -40%;
-            }
+            // @media (min-width: 1600px) {
+            //     right: -40%;
+            // }
 
-            @media (min-width: 1900px) {
-                right: -50%;
-            }
+            // @media (min-width: 1900px) {
+            //      right: -50%;
+            // }
 
             @keyframes flyWorkSpace {
                 0% {}
