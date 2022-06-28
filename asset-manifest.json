@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9e2f5e64.css",
-    "main.js": "/portfolio/static/js/main.6134fda1.js",
+    "main.css": "/portfolio/static/css/main.4e8fe489.css",
+    "main.js": "/portfolio/static/js/main.659b380a.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio/static/js/787.aeca62f9.chunk.js",
     "static/media/movieApp.jpg": "/portfolio/static/media/movieApp.987d69706fa1a58f836f.jpg",
     "static/media/crypto.jpg": "/portfolio/static/media/crypto.3190796647146e2d361a.jpg",
     "static/media/logoGame.png": "/portfolio/static/media/logoGame.0a1a38a66e3fa74b25b6.png",
-    "static/media/workGuy.png": "/portfolio/static/media/workGuy.591442e983f4badc680a.png",
+    "static/media/workGuy1.png": "/portfolio/static/media/workGuy1.01cdf90aacf7fd245a36.png",
     "static/media/mini13.jpg": "/portfolio/static/media/mini13.50475d056b6c3d49d0ce.jpg",
     "static/media/mini8.jpg": "/portfolio/static/media/mini8.8125df80b766416956b5.jpg",
     "static/media/mini4.jpg": "/portfolio/static/media/mini4.7542d3a9be94cab573c6.jpg",
     "static/media/mini2.jpg": "/portfolio/static/media/mini2.c4af5572d71a75ea0d2b.jpg",
     "static/media/oneHandBandit.jpg": "/portfolio/static/media/oneHandBandit.9652eb4a4d35bf1ae67b.jpg",
     "static/media/weatherApp.jpg": "/portfolio/static/media/weatherApp.e72748625f955a06f89f.jpg",
-    "static/media/workSpace.png": "/portfolio/static/media/workSpace.255d6f7791a79a017ebd.png",
     "static/media/mini7.jpg": "/portfolio/static/media/mini7.756b8a499a2197494e0b.jpg",
     "static/media/mini11.jpg": "/portfolio/static/media/mini11.32b3cf6c2b15e5d66585.jpg",
+    "static/media/circle.png": "/portfolio/static/media/circle.b8b68b96ed218a44ceb7.png",
     "static/media/mini15.jpg": "/portfolio/static/media/mini15.034d622d24b5bfa522fc.jpg",
     "static/media/mini6.jpg": "/portfolio/static/media/mini6.671364da47e0b022501a.jpg",
     "static/media/bg.png": "/portfolio/static/media/bg.4ad7b2edb5555a3de1b2.png",
@@ -35,12 +35,12 @@
     "static/media/walkWhite.png": "/portfolio/static/media/walkWhite.ae2031e6dde3b705ae04.png",
     "static/media/Logo-mo.png": "/portfolio/static/media/Logo-mo.6274bb4374dbb084d872.png",
     "index.html": "/portfolio/index.html",
-    "main.9e2f5e64.css.map": "/portfolio/static/css/main.9e2f5e64.css.map",
-    "main.6134fda1.js.map": "/portfolio/static/js/main.6134fda1.js.map",
+    "main.4e8fe489.css.map": "/portfolio/static/css/main.4e8fe489.css.map",
+    "main.659b380a.js.map": "/portfolio/static/js/main.659b380a.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e2f5e64.css",
-    "static/js/main.6134fda1.js"
+    "static/css/main.4e8fe489.css",
+    "static/js/main.659b380a.js"
   ]
 }
