@@ -203,7 +203,11 @@
             span.main-title {
                 display: inline-block;
                 font-family: $header-font;
-                font-size: 4.5rem;
+                font-size: 5.5rem;
+
+                @media screen and (min-width: 1800px) {
+                    font-size: 7rem;
+                }
             }
 
         }
