@@ -68,6 +68,7 @@
             display: flex;
             opacity: 0.7;
             transition: 0.4s ease;
+            margin: 5px 0px;
 
 
             span {
@@ -100,7 +101,7 @@
             content: "";
             display: block;
             position: absolute;
-            bottom: 0px;
+            bottom: -5px;
             height: 1px;
             background-color: $green-color;
             width: 0%;
@@ -204,8 +205,7 @@
             position: absolute;
             width: 100%;
             right: -120%;
-            top: 0%;
-
+            top: 5%;
         }
 
         .staticGuy {
@@ -218,11 +218,11 @@
                 0% {}
 
                 25% {
-                    top: -2%;
+                    top: 2%;
                 }
 
                 50% {
-                    top: 0%;
+                    top: 5%;
                 }
 
                 75% {
@@ -230,7 +230,7 @@
                 }
 
                 100% {
-                    top: 0%;
+                    top: 5%;
                 }
             }
         }
@@ -277,7 +277,7 @@
     .wrapper__designing {
         width: 50%;
         right: 5%;
-        top: 15%;
+        top: 18%;
 
         .project-pic {
             display: none;
